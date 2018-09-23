@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Aleksandar-Portfolio</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <header>
+        <section id="first-section" class="first-section jumbotron">
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li ng-click=displayNavigation() class="navigation-menu">Meny <i class="fa fafa-img" ng-hide="change">&#xf039;</i></li>
+                    <li ng-show="displayedNav" ng-repeat="nav in navigationItems"><a href="#">{{nav}}</a></li>
+
+                </ul>
+            </nav>
+            <h1 class="jumbotron-head-text"><span class="desc1">if</span> you can design at least one thing,<br> <span
+                    class="desc1">you</span> can design everything! <br> <span class="desc1">let</span> your ideas <br><span
+                    class="desc1">grow!</span></h1> -->
+            <a href="#second-section" class="down-button"><i class="fa fa-darrow-down">&#xf103;</i> </a>
+        </section>
+        <section id="second-section" class="second-section  about">
+            <div class="about-me">
+                <h1 class="about-head-text">About me</h1>
+            </div>
+            <img class="about-picture" src="images/about-pic.jpg">
+            <div class="about-text">
+                <p class="about-text-about">Hello, my name is Aleksandar. <br><br> I'm <span class="desc2">web designer
+                        & front-end developer</span> almost 3 years. After i finished high school of economics i
+                    decided to start something new.<span class="desc2"> I wanted</span> to be web developer so i taked
+                    first course, and that's how it all started<br> <br> I fell in love with<span class="desc2">
+                        learning </span> to code, <span class="desc2">resolving </span>any type of problems, <span
+                        class="desc2">and creating</span>
+                    clean, simple and organized code as well as design. <br><br> I'm passionate, willing and dedicated
+                    in every aspect of life. Ideas are not problem,<span class="desc2"> there is a lot of ideas </span>in
+                    my head, and i'm willing to share them with you and realise all of my ideas. <br><br> I'm<span
+                        class="desc2"> waiting for you</span> to make some beautyful websites. </p>
+            </div>
+            <div class="about-info">
+                <pre><span class="desc3">Name:</span>   Aleksandar Bogojevic.</pre>
+                <pre><span class="desc3">Age:</span>   21.</pre>
+                <pre><span class="desc3">Gender:</span>   <i class="fa fa-mars"></i> </pre>
+                <pre><span class="desc3">Education:</span>   High Economics School.</pre>
+                <pre><span class="desc3">Hobbies:</span>   Sport, Gym, Movies, Games.</pre>
+            </div>
+            <a href="#third-section" class="down-button22"><i class="fa fa-darrow-down2">&#xf103;</i> </a>
+        </section>
+        <section id="third-section" class="third-section  skills">
+            <div class="my-skills">
+                <h1 class="skills-head-text">My skills</h1>
+                <article class="skill-overview">
+                    <div class="skill-bar">
+                        <div class="skillbg"></div>
+                    </div>
+                    <div class="skill-percent">95%</div>
+                    <img src="images/html-icon.png" alt="HTML5" class="skill-picture">
+                </article>
+                <article class="skill-overview">
+                    <div class="skill-bar skill-bar2">
+                        <div class="skillbg2"></div>
+                    </div>
+                    <div class="skill-percent">90%</div>
+                    <img src="images/css-icon.png" alt="HTML5" class="skill-picture">
+                </article>
+                <article class="skill-overview">
+                    <div class="skill-bar skill-bar3">
+                        <div class="skillbg3"></div>
+                    </div>
+                    <div class="skill-percent">65%</div>
+                    <img src="images/js-icon2.png" alt="HTML5" class="skill-picture">
+                </article>
+                <article class="skill-overview">
+                    <div class="skill-bar skill-bar4">
+                        <div class="skillbg4"></div>
+                    </div>
+                    <div class="skill-percent">55%</div>
+                    <img src="images/angular41.png" alt="HTML5" class="skill-picture">
+                </article>
+            </div>
+
+            <a href="#fourth-section" class="down-button23"><i class="fa fa-darrow-down23">&#xf103;</i> </a>
+        </section>
+        <section id="fourth-section" class="fourth-section projects">
+            <h1 class="projects-head-text">My projects</h1>
+            <div class="my-projects">
+                <article class="project-content">
+                    <img src="images/Axtrion/logo-med-gray.png" class="project-picture">
+                    <h2 class="project-header">Axtrion Digital <br><span class="project-head-span"> Coding (HTML5,
+                            CSS3, JavaScript, AngularJS, Bootstrap)</span></h2>
+                    <div class="project-redirection">
+                        <img src="images/arrows-right.jpg" class="redirection-picture">
+                    </div>
+                </article>
+                <article class="project-content">
+                    <img src="images/Landing page/Profile pic.png" class="project-picture project-pic">
+                    <h2 class="project-header">Landing page <br><span class="project-head-span"> Redesign and coding
+                            (HTML5, CSS3, JavaScript, AngularJS, Adobe XD, Adobe photoshop CC)</span></h2>
+                    <div class="project-redirection">
+                    
+                        <img src="images/arrows-right.jpg" class="redirection-picture">
+                    </div>
+                </article>
+
+                <article class="project-content content-soon">
+                    <h2 class="content-soon-header">COMMING SOON! :)</h2>
+                </article>
+                <article class="project-content content-soon">
+                    <h2 class="content-soon-header">COMMING SOON! :)</h2>
+                </article>
+                <!-- <article class="project-content content-soon">
+                    <h2 class="content-soon-header">COMMING SOON! :)</h2>
+                </article> -->
+            </div>
+            
+        </section>
+        <section id="fifth-section" class="fifth-section contact"></section>
+    </header>
+
+    <footer>
+        <h1 class="contact-me">Contact me <a href="#first-section"><i class="fa fa-home" style="font-size:48px;color:white"></i></a></h1>
+        <div class="contact-form">
+            <form action="contact-form">
+                <input type="text" name="yourName" placeholder="Your name..">
+                <input type="email" name="yourmail" placeholder="Your email..">
+                <textarea name="yourmsg" placeholder="Your message.."> </textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="social">
+            <p class="social-reserved">&copy; Aleksandar Bogojević. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"> </script>
+</body>
+
+</html>
